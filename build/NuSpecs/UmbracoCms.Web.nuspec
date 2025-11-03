@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata minClientVersion="4.1.0">
-        <id>UmbracoCms.Web</id>
+        <id>Lofcz.Forks.Umbraco.Web</id>
         <version>8.0.0</version>
-        <title>Umbraco Cms Core Binaries</title>
-        <authors>Umbraco HQ</authors>
-        <owners>Umbraco HQ</owners>
+        <title>Lofcz.Forks Umbraco Cms Web Binaries</title>
+        <authors>Lofcz</authors>
+        <owners>Lofcz</owners>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>http://umbraco.com/</projectUrl>
         <iconUrl>https://umbraco.com/dist/nuget/logo-small.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Contains the web assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms package to setup Umbraco in Visual Studio as an ASP.NET project.</description>
-        <summary>Contains the core assemblies needed to run Umbraco Cms</summary>
+        <description>Fork of Umbraco Cms Web. Contains the web assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the Lofcz.Forks.Umbraco package to setup Umbraco in Visual Studio as an ASP.NET project.</description>
+        <summary>Fork of Umbraco Cms Web assemblies</summary>
         <language>en-US</language>
-        <tags>umbraco</tags>
+        <tags>umbraco fork lofcz</tags>
         <repository type="git" url="https://github.com/umbraco/umbraco-cms" />
         <dependencies>
 
@@ -24,7 +24,7 @@
                   the latter would pick anything below 3.0.0 and that includes prereleases such as 3.0.0-alpha, and we do
                   not want this to happen as the alpha of the next major is, really, the next major already.
                 -->
-                <dependency id="UmbracoCms.Core" version="[$version$]" />
+                <dependency id="Lofcz.Forks.Umbraco.Core" version="[$version$]" />
                 <dependency id="ClientDependency" version="[1.9.10,1.999999)" />
                 <dependency id="ClientDependency-Mvc5" version="[1.9.3,1.999999)" />
                 <dependency id="CSharpTest.Net.Collections" version="[14.906.1403.1082,14.999999)" />

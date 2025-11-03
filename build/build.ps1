@@ -125,6 +125,12 @@
         # Don't really care about the messages from npm install making us think there are errors
         $error.Clear()
 
+        Write-Output "### npm update" >> $log 2>&1
+        npm update >> $log 2>&1
+        Write-Output ">> $? $($error.Count)" >> $log 2>&1
+        # Don't really care about the messages from npm update making us think there are errors
+        $error.Clear()
+
         Write-Output "### gulp build for version $($this.Version.Release)" >> $log 2>&1
         npm run build --buildversion=$this.Version.Release >> $log 2>&1
 		

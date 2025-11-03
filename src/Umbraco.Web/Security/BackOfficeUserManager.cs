@@ -196,7 +196,7 @@ namespace Umbraco.Web.Security
             {
                 manager.UserTokenProvider = new DataProtectorTokenProvider<T, int>(dataProtectionProvider.Create("ASP.NET Identity"))
                 {
-                    TokenLifespan = TimeSpan.FromDays(3)
+                    TokenLifespan = TimeSpan.FromDays(30)
                 };
             }
 

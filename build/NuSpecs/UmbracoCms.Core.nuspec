@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata minClientVersion="4.1.0">
-        <id>UmbracoCms.Core</id>
+        <id>Lofcz.Forks.Umbraco.Core</id>
         <version>8.0.0</version>
-        <title>Umbraco Cms Core Binaries</title>
-        <authors>Umbraco HQ</authors>
-        <owners>Umbraco HQ</owners>
+        <title>Lofcz.Forks Umbraco Cms Core Binaries</title>
+        <authors>Lofcz</authors>
+        <owners>Lofcz</owners>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>http://umbraco.com/</projectUrl>
         <iconUrl>https://umbraco.com/dist/nuget/logo-small.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms package to setup Umbraco in Visual Studio as an ASP.NET project.</description>
-        <summary>Contains the core assemblies needed to run Umbraco Cms</summary>
+        <description>Fork of Umbraco Cms Core. Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the Lofcz.Forks.Umbraco package to setup Umbraco in Visual Studio as an ASP.NET project.</description>
+        <summary>Fork of Umbraco Cms Core assemblies</summary>
         <language>en-US</language>
-        <tags>umbraco</tags>
+        <tags>umbraco fork lofcz</tags>
         <repository type="git" url="https://github.com/umbraco/umbraco-cms" />
         <dependencies>
 

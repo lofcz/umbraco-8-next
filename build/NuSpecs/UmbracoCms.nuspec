@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata minClientVersion="4.1.0">
-        <id>UmbracoCms</id>
+        <id>Lofcz.Forks.Umbraco</id>
         <version>8.0.0</version>
-        <title>Umbraco Cms</title>
-        <authors>Umbraco HQ</authors>
-        <owners>Umbraco HQ</owners>
+        <title>Lofcz.Forks Umbraco Cms</title>
+        <authors>Lofcz</authors>
+        <owners>Lofcz</owners>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>http://umbraco.com/</projectUrl>
         <iconUrl>https://umbraco.com/dist/nuget/logo-small.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Installs Umbraco Cms in your Visual Studio ASP.NET project</description>
-        <summary>Installs Umbraco Cms in your Visual Studio ASP.NET project</summary>
+        <description>Fork of Umbraco Cms. Installs Umbraco Cms in your Visual Studio ASP.NET project</description>
+        <summary>Fork of Umbraco Cms for Visual Studio ASP.NET projects</summary>
         <language>en-US</language>
-        <tags>umbraco</tags>
+        <tags>umbraco fork lofcz</tags>
         <repository type="git" url="https://github.com/umbraco/umbraco-cms" />
         <dependencies>
 
             <group targetFramework="net472">
 
-                <dependency id="UmbracoCms.Web" version="[$version$]" />
+                <dependency id="Lofcz.Forks.Umbraco.Web" version="[$version$]" />
                 <!--
                   note: dependencies are specified as [x.y.z,x.999999) eg [2.1.0,2.999999) and NOT [2.1.0,3.0.0) because
                   the latter would pick anything below 3.0.0 and that includes prereleases such as 3.0.0-alpha, and we do
