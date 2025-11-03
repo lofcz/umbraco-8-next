@@ -18,5 +18,5 @@ using System.Resources;
 [assembly: AssemblyVersion("8.0.0")]
 
 // these are FYI and changed automatically
-[assembly: AssemblyFileVersion("8.19.1")]
-[assembly: AssemblyInformationalVersion("8.19.1-lofcz")]
+[assembly: AssemblyFileVersion("8.19.2")]
+[assembly: AssemblyInformationalVersion("8.19.2-lofcz")]

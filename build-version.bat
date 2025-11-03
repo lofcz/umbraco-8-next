@@ -12,12 +12,21 @@ echo.
 
 REM Get current version from existing package
 set CURRENT_VERSION=
-for /f "tokens=2 delims=." %%a in ('dir /b build.out\Lofcz.Forks.Umbraco.Core.*.nupkg 2^>nul') do (
-    for /f "tokens=1-3 delims=.-" %%b in ("%%a") do (
-        set CURRENT_MAJOR=%%b
-        set CURRENT_MINOR=%%c
-        set CURRENT_PATCH=%%d
-        set CURRENT_VERSION=%%b.%%c.%%d
+for /f "delims=" %%f in ('dir /b build.out\Lofcz.Forks.Umbraco.Core.*.nupkg 2^>nul') do (
+    REM Extract version from filename: Lofcz.Forks.Umbraco.Core.8.19.0-lofcz.nupkg
+    REM Remove prefix: Lofcz.Forks.Umbraco.Core.
+    set FILENAME=%%f
+    set FILENAME=!FILENAME:Lofcz.Forks.Umbraco.Core.=!
+    REM Remove suffix: .nupkg
+    set FILENAME=!FILENAME:.nupkg=!
+    REM Remove -lofcz suffix
+    set FILENAME=!FILENAME:-lofcz=!
+    REM Now we have just the version like 8.19.0
+    for /f "tokens=1-3 delims=." %%a in ("!FILENAME!") do (
+        set CURRENT_MAJOR=%%a
+        set CURRENT_MINOR=%%b
+        set CURRENT_PATCH=%%c
+        set CURRENT_VERSION=%%a.%%b.%%c
     )
 )
 
